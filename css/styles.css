@@ -38,6 +38,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 h1, h2, h3, p {
@@ -51,6 +52,7 @@ h1, h2, h3, p {
     display: flex;
     align-items: center;
     height: 80px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
@@ -125,7 +127,6 @@ h1, h2, h3, p {
 /* Hero */
 
 .hero {
-    height: 600px;
     background-color: var(--background-footer);
     text-align: center;
     padding: 200px 0;
@@ -156,11 +157,20 @@ h1, h2, h3, p {
     letter-spacing: 0.06em;
     padding: 10px 32px;
     margin-top: 40px;
+    border: none;
 }
 
 /* Sections */
 .section {
     padding: 94px 0;
+}
+
+.hidden-title {
+    visibility: hidden;
+}
+
+.benefits-section {
+    padding-bottom: 0;
 }
 
 .benefits {
@@ -182,6 +192,7 @@ h1, h2, h3, p {
 
 .description {
     color: var(--secondary-text-color);
+    line-height: 1.71;
 }
 
 .title {
@@ -200,6 +211,12 @@ h1, h2, h3, p {
 
 .pictures .item:not(:last-child) {
     margin-right: 30px;
+}
+
+.img-gadget {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Team info */
@@ -274,6 +291,7 @@ h1, h2, h3, p {
 .button-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .button-list .item:not(:last-child) {
@@ -293,7 +311,6 @@ h1, h2, h3, p {
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    margin-bottom: 50px;
 }
 
 .button-menu:hover, 
@@ -310,14 +327,14 @@ h1, h2, h3, p {
 
 .project-card {
     width: 370px;
-    height: 404px;
-    background-color: #fff;
-    border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
 
 .project-info {
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .card-header {
